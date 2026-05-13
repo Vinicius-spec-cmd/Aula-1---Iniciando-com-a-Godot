@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c7p0ql43d74aq"]
+
+[ext_resource type="PackedScene" uid="uid://cgp4tessihh3b" path="res://player.tscn" id="1_3hls8"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3hls8"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_hbghi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hls8"]
+size = Vector2(1154, 133)
+
+[node name="Level 1" type="Node2D" unique_id=1053144393]
+
+[node name="Player" parent="." unique_id=992920717 instance=ExtResource("1_3hls8")]
+position = Vector2(776, 489.00003)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=381480822]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=908870433]
+modulate = Color(0.48235294, 1, 1, 1)
+material = SubResource("CanvasItemMaterial_3hls8")
+texture = SubResource("CanvasTexture_hbghi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=577201615]
+position = Vector2(572, 581.5)
+shape = SubResource("RectangleShape2D_3hls8")
+one_way_collision = true
