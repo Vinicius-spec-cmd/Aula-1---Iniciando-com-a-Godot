@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0mv84wpe4uqi"
-path="res://.godot/imported/transferir.png-d369fd9b1d2222bd861658d54c4ed425.ctex"
+uid="uid://0uhdscr6jxoa"
+path="res://.godot/imported/Hakari2.png-f869f503899382480246514a65427b57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://transferir.png"
-dest_files=["res://.godot/imported/transferir.png-d369fd9b1d2222bd861658d54c4ed425.ctex"]
+source_file="res://Hakari2.png"
+dest_files=["res://.godot/imported/Hakari2.png-f869f503899382480246514a65427b57.ctex"]
 
 [params]
 
