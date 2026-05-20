@@ -2,10 +2,19 @@
 
 [ext_resource type="Script" uid="uid://ccwb4ulihmp8u" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://c1ddakfm1mijc" path="res://Hakari1.png" id="2_duskh"]
+[ext_resource type="Texture2D" uid="uid://cyog2f4vasc0m" path="res://Idle.png" id="2_jcea2"]
 [ext_resource type="Texture2D" uid="uid://0uhdscr6jxoa" path="res://Hakari2.png" id="3_jcea2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l3cwt"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jcea2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_duskh")
@@ -27,15 +36,15 @@ scale = Vector2(3.6071486, 517.5747)
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1314350482]
-position = Vector2(-5.4549255, 0.099512994)
+position = Vector2(-3.9739354, 0.10631471)
 rotation = 3.1415927
-scale = Vector2(0.39690885, -0.0011369328)
+scale = Vector2(0.33038184, -0.0011857335)
 sprite_frames = SubResource("SpriteFrames_l3cwt")
-animation = &"walk"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=857727521]
 position = Vector2(-3.124405, 0.10169029)
-scale = Vector2(1, 1.0000014)
+scale = Vector2(1, 1.0000015)
 shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=301039744]
